@@ -1,14 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crypto-Meter.com - Live Crypto Price Comparator</title>
-  <meta name="description" content="Compare live Crypto prices with your target and get dinner invitations based on price movements.">
-  <!-- Add any other meta tags or links here -->
-</head>
-<body>
-  <div id="root"></div>
-  <!-- Your scripts will be injected here by Vite -->
-</body>
-</html> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto-Meter.com - Live Crypto Price Comparator</title>
+    <link rel="stylesheet" href="styles/combined.css">
+    <!-- Meta Tags -->
+    <meta name="description" content="Compare live Crypto prices with your target and get dinner invitations based on price movements.">
+    <meta name="keywords" content="crypto ticker, crypto target, bitcoin target, bitcoin goal">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": "Crypto Price Comparator",
+      "url": "https://www.crypto-meter.com",
+      "description": "Compare live Crypto prices with your target and get dinner invitations based on price movements.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.crypto-meter.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
